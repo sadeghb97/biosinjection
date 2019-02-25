@@ -46,9 +46,9 @@ if(!empty($_POST['register'])){
     $sql = "INSERT INTO bios (name, last_name, address) VALUES "
             . "('{$_POST['name']}', '{$_POST['last_name']}', '{$_POST['address']}')";
     if($conn->multi_query($sql)){
-        echo '<span style="color: green; font-weight: bold; margin-bottom: 30px;">Bio inserted successfuly!</span>';
+        echo '<div style="color: green; font-weight: bold; margin-bottom: 30px;">Bio inserted successfuly!</div>';
     }
-    else echo '<span style="color: red; font-weight: bold; margin-bottom: 30px;">Something went wrong!</span>';
+    else echo '<div style="color: red; font-weight: bold; margin-bottom: 30px;">Something went wrong!</div>';
 }
 ?>
 
