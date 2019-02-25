@@ -1,0 +1,173 @@
+body{
+    text-align: center;
+}
+
+.forms{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #269abc;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #fbfbfb;
+}
+
+.update_panel{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #269abc;
+    margin: auto;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fbfbfb;
+}
+
+.update_panel_button{
+    width: 105px;
+    height: 35px;
+}
+
+.tables_panel{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #269abc;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fbfbfb;
+}
+
+.follows_div{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #269abc;
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fbfbfb;    
+}
+
+.follow_item{
+    width: 400px;
+    background-color: #d6e9c6;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 4px;
+    display: inline-block;
+}
+
+.panelbuttons{
+    width: 90px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.bigbuttons{
+    width: 230px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.table{
+    font-size: 17px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td, .table th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.div-profile{
+    width: 340px;
+    height: 100px;
+    border-style: ridge;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.div-profile-avatar-container{
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+
+.div-profile-avatar-image{
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    margin: 5%;
+    object-fit: cover;
+}
+
+.div-profile-username-container{
+    width: 240px;
+    height: 20px;
+}
+
+.div-profile-username{
+    margin-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    color: DarkSlateGray;
+}
+
+.div-profile-properties{
+    width: 240px;
+    height: 80px;
+    float: left;
+}
+
+.div-profile-property-container{
+    width: 80px;
+    height: 100px;
+    float: left;
+}
+
+.div-profile-property-value{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 15%;
+    text-align: center;
+    font-weight: 900;
+    float: top;
+}
+
+.div-profile-property-title{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    font-weight: 400;
+    float: bottom;
+    font-size: 12px;
+    margin-top: -15%;
+}
