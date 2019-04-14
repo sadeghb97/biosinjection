@@ -25,6 +25,16 @@
             
             return true;
         }
+		
+		function updateQuery(){
+			let name = document.getElementById('name');
+            let lastname = document.getElementById('last_name');
+            let address = document.getElementById('address');
+			let query = document.getElementById('current_query');
+			
+            let queryStr = "INSERT INTO bios (name, last_name, address) VALUES ('" + name.value + "', '" + lastname.value + "', '" + address.value + "')";
+            query.innerHTML = queryStr;
+		}
     </script>
 </head>
 
@@ -52,21 +62,21 @@ if(!empty($_POST['register'])){
 }
 ?>
 
-<img src="screen.png" style="width: 900px; height: auto;" />
-
 <form method="post" class="forms">
     <p style="font-weight: 900; margin: 8px;">Register Form</p>
     <b>Name: </b>
-    <input type="text" name="name" id="name">
+    <input type="text" name="name" id="name" onkeyup="updateQuery();" onchange="updateQuery();">
     <br>        
     <b>Last Name: </b>
-    <input type="text" name="last_name" id="last_name">
+    <input type="text" name="last_name" id="last_name" onkeyup="updateQuery();" onchange="updateQuery();">
     <br>
     <b>Address: </b>
-    <input type="text" name="address" id="address">
+    <input type="text" name="address" id="address" onkeyup="updateQuery();" onchange="updateQuery();">
     <br><br>
     <input type="submit" value="Register" name="register" onclick="return submitBio();">
 </form>
+
+<span style="font-size: 22px;" id="current_query">INSERT INTO bios (name, last_name, address) VALUES ('', '', '')</span>
 
 <?php
 $sql = "SELECT * FROM bios";
@@ -94,6 +104,12 @@ $conn->close();
             </tr>
         <?php } ?>
     </table>
+</div>
+
+<div style="margin-top: 50px;">
+<span><a href="screen.png" style="text-decoration: none; color: Crimson;" target="_blank">Screen1</a></span>
+<span> | </span>
+<span><a href="screen2.png" style="text-decoration: none; color: Crimson;" target="_blank">Screen2</a></span>
 </div>
 
 
